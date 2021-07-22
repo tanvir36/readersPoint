@@ -1,0 +1,22 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+@use '../../partials/fonts' as *;
+
+.search{
+    margin: 0rem 2rem;
+    border: 2px solid purple;
+    &__input{
+        height: 5rem;
+        width: 60%;
+        border-radius: 40px;
+        font-family: patrick;
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 0rem 2rem;
+        color: white;
+        background-image: linear-gradient(rgba(20, 14, 14, 0.747),rgba(19, 14, 14, 0.425)),url("../../assets/images/books-background.jpg");
+        &:focus{
+            outline: none;
+        }
+    }
+}
