@@ -14,21 +14,6 @@ import axios from 'axios';
         });
     }
 
-    componentDidMount() {
-        axios.get(`https://www.googleapis.com/books/v1/volumes?q=motivational&key=AIzaSyCwi5Na0Td3fv6QHlLcLTtvlGIuiRCbkxE`)
-        .then((response)=>{      
-        })
-        .catch(error=>{
-            console.log(error);
-        });        
-    }
-    componentDidUpdate() {
-        if (this.state.search){
-            axios.get(`https://www.googleapis.com/books/v1/volumes?q=${this.state.search}&key=AIzaSyCwi5Na0Td3fv6QHlLcLTtvlGIuiRCbkxE`)
-            .then(response=>{       
-            })
-        } 
-    }
     render() {
         return(
             <form className="search" onSubmit={this.submitHandler}>
