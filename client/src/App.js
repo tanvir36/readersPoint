@@ -3,17 +3,28 @@ import './App.scss';
 import Header from './Components/Header/Header';
 import Search from './Components/Search/Search';
 import Books from './Components/Books/Books';
-import Information from './Components/Information/Information';
 
-function App() {
+import { Component } from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+class App extends Component{
+
+  state = {
+    search: "",
+  };
+
+
+  render() {
   return (
-    <div className="App">
-      <Header/> 
-      <Search/>
-      <Books/>
-      <Information/>
-    </div>
+    <Router>
+      <div className="App">
+        <Header/> 
+        <Search/> 
+        
+      </div>
+    </Router>
   );
+  }
 }
 
 export default App;

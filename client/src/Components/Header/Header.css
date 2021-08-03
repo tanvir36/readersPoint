@@ -1,0 +1,27 @@
+@font-face {
+  font-family: patrick;
+  src: url("../assets/patric-font/PatrickHand-Regular.woff");
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0rem;
+  margin: 2rem;
+  border: 2px solid red;
+}
+.header__logo {
+  height: 12rem;
+  width: 16rem;
+  margin: 0rem;
+}
+.header__logo img {
+  height: 100%;
+  width: 100%;
+  padding: 0rem;
+}
+.header__title {
+  margin-left: 0rem;
+  font-family: patrick;
+  font-size: 3rem;
+}/*# sourceMappingURL=Header.css.map */

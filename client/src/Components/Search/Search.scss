@@ -1,7 +1,12 @@
-
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+@use '../../partials/fonts' as *;
 .search{
-    width: 60%;
-    border: 2px solid purple;
+    width: 80%;
+    @include desktop{
+        width: 60%;
+    }
+  
     &__input{
         height: 5rem;
         width: 100%;       
@@ -17,4 +22,37 @@
             outline: none;
         }
     }
+}
+
+
+.books{
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    @include tablet{
+        margin: 4rem auto;
+    }
+    &__card{
+        height: 20rem;
+        width: 16rem;
+        margin: 1rem ;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.384) 0px 15px 20px, rgba(0, 0, 0, 0.418) 0px 10px 6px;
+       &:hover{
+           transform: scale(1.2);
+           
+       }     
+        & img{
+        height: 100%;
+        width: 100%;
+        &:hover{
+            z-index: -1;
+        }
+       
+       }
+    
+    }
+
 }

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: patrick;
+  src: url("../assets/patric-font/PatrickHand-Regular.woff");
+}
+* {
+  margin: 0rem;
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=App.css.map */
